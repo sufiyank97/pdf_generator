@@ -71,7 +71,7 @@ app.post('/new', async function (req, res) {
             filename: 'generated.pdf',
             htmlContent: content,
             options: {
-                format: 'A4',
+                format: 'A3',
                 margin: "none",
                 printBackground: true
             }
