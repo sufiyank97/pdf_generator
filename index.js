@@ -1,4 +1,4 @@
-const puppeteer = require('puppeteer')
+
 const express = require('express')
 const fs = require('fs-extra')
 const hbs = require('handlebars')
@@ -37,8 +37,9 @@ const compile = async (templateName, data) => {
     return hbs.compile(html)(data1);
 }
 
-const browser = puppeteer.launch()
 const main = async () => {
+    const puppeteer = require('puppeteer')
+    const browser = await puppeteer.launch()
     const page = await browser.newPage()
     const content = await compile('short-list', req.body.values)
     // await page.setViewport({ width: 1440, height: 900, deviceScaleFactor: 2 })
@@ -64,7 +65,6 @@ app.post('/new', async function (req, res) {
         const pdf = await main();
         res.contentType("application/pdf");
         res.send(pdf);
-        console.log('done')
         // var file = path.join(__dirname, 'mypdf.pdf');
         // res.contentType("application/pdf");
         // res.download(file, function (err) {
