@@ -49,9 +49,9 @@ const main = async (a1) => {
     await page.setContent(content)
     // await page.goto(`data:text/html,${content}`, { waitUntil: 'networkidle0' })
     await page.emulateMediaType('screen')
-    const file1 = path.join(process.cwd(), 'templates/')
-    console.log(file1)
-    console.log(__dirname)
+    // const file1 = path.join(process.cwd(), 'templates/')
+    // console.log(file1)
+    // console.log(__dirname)
     const pdf = await page.pdf({
         path: 'mypdf.pdf',
         format: 'Letter',
@@ -65,20 +65,20 @@ const main = async (a1) => {
 
 app.post('/new', async function (req, res) {
     try {
-        const content = await compile('short-list', req.body.values)
-        console.log(content)
-        res.pdfFromHTML({
-            filename: 'generated.pdf',
-            htmlContent: content,
-            options: {
-                format: 'A3',
-                margin: "none",
-                printBackground: true
-            }
-        });
-        // const pdf = await main(req.body.values);
-        // res.contentType("application/pdf");
-        // res.send(pdf);
+        // const content = await compile('short-list', req.body.values)
+        // console.log(content)
+        // res.pdfFromHTML({
+        //     filename: 'generated.pdf',
+        //     htmlContent: content,
+        //     options: {
+        //         format: 'A3',
+        //         margin: "none",
+        //         printBackground: true
+        //     }
+        // });
+        const pdf = await main(req.body.values);
+        res.contentType("application/pdf");
+        res.send(pdf);
         // var file = path.join(__dirname, 'mypdf.pdf');
         // res.contentType("application/pdf");
         // res.download(file, function (err) {
