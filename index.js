@@ -63,9 +63,15 @@ const main = async (a1) => {
 
 app.post('/new', async function (req, res) {
     try {
-        const pdf = await main(req.body.values);
-        res.contentType("application/pdf");
-        res.send(pdf);
+        const content = await compile('short-list', req.body.values)
+        res.pdfFromHTML({
+            filename: 'generated.pdf',
+            html: content,
+            options: { format: 'Letter' }
+        });
+        // const pdf = await main(req.body.values);
+        // res.contentType("application/pdf");
+        // res.send(pdf);
         // var file = path.join(__dirname, 'mypdf.pdf');
         // res.contentType("application/pdf");
         // res.download(file, function (err) {
