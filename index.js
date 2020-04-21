@@ -69,9 +69,7 @@ app.post('/new', async function (req, res) {
             filename: 'generated.pdf',
             htmlContent: content,
             options: {
-                format: 'Letter',
-                margin: "none",
-                printBackground: true
+                format: 'letter'
             }
         });
         // const pdf = await main(req.body.values);
