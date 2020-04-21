@@ -67,10 +67,7 @@ app.post('/new', async function (req, res) {
         console.log(content)
         res.pdfFromHTML({
             filename: 'generated.pdf',
-            htmlContent: content,
-            options: {
-                format: 'letter'
-            }
+            htmlContent: content
         });
         // const pdf = await main(req.body.values);
         // res.contentType("application/pdf");
