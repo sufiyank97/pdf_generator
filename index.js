@@ -11,6 +11,7 @@ app.use(express.json())
 app.use(express.static(file1))
 const port = process.env.PORT || 3004;
 
+const browser = puppeteer.launch({ headless: true })
 
 
 const compile = async (templateName, data) => {
@@ -36,7 +37,6 @@ const compile = async (templateName, data) => {
     return hbs.compile(html)(data1);
 }
 
-const browser = await puppeteer.launch({ headless: true })
 
 
 
