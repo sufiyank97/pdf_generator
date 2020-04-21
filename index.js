@@ -15,6 +15,7 @@ const port = process.env.PORT || 3004;
 
 
 
+
 const compile = async (templateName, data) => {
     const filePath = path.join(process.cwd(), 'templates', `${templateName}.hbs`)
     console.log(filePath)
@@ -67,7 +68,12 @@ app.post('/new', async function (req, res) {
         console.log(content)
         res.pdfFromHTML({
             filename: 'generated.pdf',
-            htmlContent: content
+            htmlContent: content,
+            options: {
+                format: 'letter',
+                margin: "none",
+                printBackground: true
+            }
         });
         // const pdf = await main(req.body.values);
         // res.contentType("application/pdf");
