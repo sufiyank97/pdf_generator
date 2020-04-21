@@ -2,7 +2,6 @@ const puppeteer = require('puppeteer')
 const express = require('express')
 const fs = require('fs-extra')
 const hbs = require('handlebars')
-const data = require('./data.json')
 const path = require('path')
 const moment = require('moment')
 
@@ -11,6 +10,9 @@ const file1 = path.join(process.cwd(), 'templates')
 app.use(express.json())
 app.use(express.static(file1))
 const port = process.env.PORT || 3004;
+
+
+
 const compile = async (templateName, data) => {
     const filePath = path.join(process.cwd(), 'templates', `${templateName}.hbs`)
     console.log(filePath)
@@ -21,7 +23,6 @@ const compile = async (templateName, data) => {
         return new hbs.SafeString(text);
     });
     hbs.registerHelper('dateFormat', function (value, format) {
-        // console.log('formatting', value, format);
         return moment(value).format(format)
     })
     let data1 = {}
@@ -31,8 +32,7 @@ const compile = async (templateName, data) => {
         d1.name = d1.name.replace('E1.3', 'E13')
         data1[d1.name] = d1.value
     })
-    // console.log(data)
-    // console.log(data1)
+
     return hbs.compile(html)(data1);
 }
 
@@ -78,22 +78,3 @@ app.listen(port, () => {
     console.log(file1)
 });
 
-// (async function () {
-//     try {
-//         const browser = await puppeteer.launch()
-//         const page = await browser.newPage()
-//         const content = await compile('short-list', data)
-//         await page.setContent(content)
-//         await page.emulateMediaType('screen')
-//         await page.pdf({
-//             path: 'mypdf.pdf',
-//             format: 'A4',
-//             printBackground: true
-//         })
-//         console.log('done')
-//         await browser.close()
-//         process.exit()
-//     } catch (e) {
-//         console.log('error', e)
-//     }
-// })()
