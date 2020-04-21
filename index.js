@@ -11,7 +11,7 @@ app.use(express.json())
 app.use(express.static(file1))
 const port = process.env.PORT || 3004;
 
-const browser = puppeteer.launch({ headless: true })
+
 
 
 const compile = async (templateName, data) => {
@@ -37,38 +37,44 @@ const compile = async (templateName, data) => {
     return hbs.compile(html)(data1);
 }
 
-
+const main = async () => {
+    const browser = await puppeteer.launch({ headless: true })
+    const page = await browser.newPage()
+    const content = await compile('short-list', req.body.values)
+    // await page.setViewport({ width: 1440, height: 900, deviceScaleFactor: 2 })
+    await page.setContent(content)
+    // await page.goto(`data:text/html,${content}`, { waitUntil: 'networkidle0' })
+    await page.emulateMediaType('screen')
+    const file1 = path.join(process.cwd(), 'templates/')
+    console.log(file1)
+    console.log(__dirname)
+    const pdf = await page.pdf({
+        path: 'mypdf.pdf',
+        format: 'Letter',
+        margin: "none",
+        printBackground: true
+        // base: 'file:///' + file1
+    })
+    return pdf
+}
 
 
 app.post('/new', async function (req, res) {
     try {
-        const page = await browser.newPage()
-        const content = await compile('short-list', req.body.values)
-        // await page.setViewport({ width: 1440, height: 900, deviceScaleFactor: 2 })
-        await page.setContent(content)
-        // await page.goto(`data:text/html,${content}`, { waitUntil: 'networkidle0' })
-        await page.emulateMediaType('screen')
-        const file1 = path.join(process.cwd(), 'templates/')
-        console.log(file1)
-        console.log(__dirname)
-        const dd = await page.pdf({
-            path: 'mypdf.pdf',
-            format: 'Letter',
-            margin: "none",
-            printBackground: true
-            // base: 'file:///' + file1
-        })
-        console.log('done')
-        var file = path.join(__dirname, 'mypdf.pdf');
+        const pdf = await main();
         res.contentType("application/pdf");
-        res.download(file, function (err) {
-            if (err) {
-                console.log("Error");
-                console.log(err);
-            } else {
-                console.log("Success");
-            }
-        });
+        res.send(pdf);
+        console.log('done')
+        // var file = path.join(__dirname, 'mypdf.pdf');
+        // res.contentType("application/pdf");
+        // res.download(file, function (err) {
+        //     if (err) {
+        //         console.log("Error");
+        //         console.log(err);
+        //     } else {
+        //         console.log("Success");
+        //     }
+        // });
     } catch (e) {
         console.log('error', e)
     }
