@@ -38,7 +38,7 @@ const compile = async (templateName, data) => {
 }
 
 const main = async () => {
-    const browser = await puppeteer.launch({ headless: true })
+    const browser = await puppeteer.launch()
     const page = await browser.newPage()
     const content = await compile('short-list', req.body.values)
     // await page.setViewport({ width: 1440, height: 900, deviceScaleFactor: 2 })
