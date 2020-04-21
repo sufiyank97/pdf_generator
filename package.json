@@ -13,6 +13,7 @@
   "license": "ISC",
   "dependencies": {
     "express": "^4.17.1",
+    "express-pdf": "^1.2.2",
     "fs-extra": "^9.0.0",
     "handlebars": "^4.7.6",
     "moment": "^2.24.0",
