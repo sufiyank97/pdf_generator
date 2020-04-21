@@ -59,13 +59,15 @@ const main = async (a1) => {
     // console.log(__dirname)
     const pdf = await page.pdf({
         path: 'mypdf.pdf',
-        format: 'A4',
+        format: 'Letter',
         margin: "none",
         printBackground: true
         // base: 'file:///' + file1
     })
     return pdf
 }
+
+
 
 
 app.post('/new', async function (req, res) {

@@ -1,5 +1,5 @@
 .Rectangle {
-    width: 23em;
+    width: 21em;
     border: 1px solid #93c6c4;
     margin-left: 26.5em;
     margin-bottom: 4em;
@@ -7,7 +7,7 @@
 }
 
 .Rectangle h2 {
-    font-size: 1.3em;
+    font-size: 1em;
     color: white;
     margin-left: 0.5em;
 }
