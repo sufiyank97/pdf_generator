@@ -42,7 +42,12 @@ const compile = async (templateName, data) => {
 
 const main = async (a1) => {
     const puppeteer = require('puppeteer')
-    const browser = await puppeteer.launch()
+    const browser = await puppeteer.launch({
+        args: [
+            '--no-sandbox',
+            '--disable-setuid-sandbox',
+        ],
+    })
     const page = await browser.newPage()
     const content = await compile('short-list', a1)
     // await page.setViewport({ width: 1440, height: 900, deviceScaleFactor: 2 })
