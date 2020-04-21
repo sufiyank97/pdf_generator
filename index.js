@@ -64,9 +64,10 @@ const main = async (a1) => {
 app.post('/new', async function (req, res) {
     try {
         const content = await compile('short-list', req.body.values)
+        console.log(content)
         res.pdfFromHTML({
             filename: 'generated.pdf',
-            html: content,
+            htmlContent: content,
             options: { format: 'Letter' }
         });
         // const pdf = await main(req.body.values);
