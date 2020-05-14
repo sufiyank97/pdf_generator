@@ -1,15 +1,16 @@
 .Rectangle {
-    width: 21em;
+    width: 22em;
     border: 1px solid #93c6c4;
-    margin-left: 26.5em;
+    margin-left: 23.5em;
     margin-bottom: 4em;
     background-color: #93c6c4;
 }
 
 .Rectangle h2 {
-    font-size: 1em;
+    font-size: 14px;
     color: white;
-    margin-left: 0.5em;
+    line-height: 2em;
+    margin-left: 1.5em;
 }
 
 .logo {
@@ -21,7 +22,7 @@
 .Rectangle1 {
     width: 42em;
     position: absolute;
-    margin: 10em 1em;
+    margin: 14em 1em;
     background-color: black;
     color: white;
     border: 1px solid black;
@@ -30,13 +31,13 @@
 
 .text1 {
     width: 20em;
-    margin: 15em 1em;
+    margin: 23em 1em;
     position: absolute;
 }
 
 .logo1 {
     position: absolute;
-    margin: 15em 26.5em;
+    margin: 19em 23.5em;
 }
 
 .header1{

@@ -1,0 +1,80 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<HTML>
+
+<HEAD>
+    <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <TITLE>Sample Valuation Report (1)</TITLE>
+    <META name="generator" content="BCL easyConverter SDK 5.0.210">
+    <link rel="stylesheet" href="https://pdfgenerator1.herokuapp.com/new.css">
+    <link rel="stylesheet" href="https://pdfgenerator1.herokuapp.com/new1.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <style>
+        html,
+        body {
+            height: 100%;
+            width: 100%;
+            counter-reset: page 1;
+        }
+
+
+
+
+        .new1::after {
+            content: counter(page);
+        }
+
+
+
+
+        header {
+            margin-left: 4em;
+            top: 2em;
+        }
+    </style>
+</HEAD>
+
+<BODY>
+
+    <DIV id="page_1">
+        <div id="p1dimg1">
+            <div class="logo">
+                <img src="https://pdfgenerator1.herokuapp.com/images/houzecheck.jpg" style="width: 13em;">
+                <img src="https://pdfgenerator1.herokuapp.com/images/rics.jpg" style="width:8em;margin-left: 1em;">
+            </div>
+            <div class="Rectangle1">
+                <h2>Residential Valuation Report</h2>
+            </div>
+            <div class="logo1">
+                <img src="https://pdfgenerator1.herokuapp.com/images/bg1.jpg" style="width: 16em;">
+            </div>
+            <div class="text1">
+                <p style="font-size: 1.1em;color:#00AFE4">
+                    <i>
+                        &quot;A professional opinion on the
+                        value of a property for a specified
+                        purpose&quot;
+                    </i>
+                </p>
+            </div>
+            <div class="Rectangle">
+                <div>
+                    <div style="margin-top: 3em;">
+                        <h2>Client: {{breaklines A1}}</h2>
+                        <h2>Property Address: {{breaklines A2}}</h2>
+                    </div>
+                    <div style="margin-top: 30em;margin-bottom:1em;">
+
+                        <h2>Prepared By:</h2>
+                        <h2>{{breaklines A3}}</h2>
+                        <h2>On behalf of:</h2>
+                        <h2>{{breaklines A4}}</h2>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </DIV>
+</BODY>
+
+</HTML>

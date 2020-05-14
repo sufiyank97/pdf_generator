@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<HTML>
+
+<HEAD>
+    <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <TITLE>Example HomeBuyer Report - HouzeCheck (1)</TITLE>
+    <META name="generator" content="BCL easyConverter SDK 5.0.210">
+    <link rel="stylesheet" href="https://pdfgenerator1.herokuapp.com/homebuyer.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <style>
+        .img1 {
+            margin-top: 3em;
+            width: 11em;
+            margin-left: 40em;
+        }
+
+        .img2 {
+            width: 50em;
+            margin: auto;
+            display: block;
+            margin-top: 15em;
+        }
+
+        .div1 {
+
+            margin-top: 15em;
+        }
+
+        #page2Content {
+            font-family: Century Schoolbook;
+            margin-left: 5em;
+            border-bottom: 2px solid #a0a4b0;
+            border-width: thick;
+            width: 10em;
+        }
+
+        .underPara {
+            border-bottom: 2px solid #a0a4b0;
+            border-width: thick;
+            width: 20em;
+        }
+
+
+
+
+        .pageNumber::after {
+            counter-increment: page;
+            content: counter(page);
+        }
+
+
+        .header1 {
+            font-family: Century Schoolbook;
+            border-bottom: 2px solid #a0a4b0;
+            border-width: thick;
+            width: 14em;
+        }
+
+
+
+
+        .content-block {
+            position: absolute;
+            overflow: visible;
+            overflow: auto
+        }
+
+        .tt1 {
+            border-bottom: 1px solid #a0a4b0;
+        }
+
+        .tt1 tr:last-child td:last-child {
+            border-bottom: 1px solid #a0a4b0;
+            width: 18em;
+        }
+
+        .tt1 tr {
+            line-height: 1px;
+        }
+    </style>
+</HEAD>
+
+<BODY>
+    {{!-- <div class="coverPage" style="margin-bottom: 3em;">
+
+        <img src="https://pdfgenerator1.herokuapp.com/images/cover.PNG" style="margin-left: 2em;margin-top:2em">
+        <div style="margin-left:18em;">
+            <div class="col div1">
+                <div class="row  mb-3" style="font-size: 13px;font-weight: bold;">
+                    <label class="pt-2 pr-4 la">Property address</label>
+                    <div style="border: 1px solid #a0a4b0;width: 18em;">
+                        <p style="font-weight: normal;padding-left: 1em;font-size: 15px;">{{breaklines A09}}</p>
+                    </div>
+                </div>
+                <div class="row mb-3" style="font-size: 13px;font-weight: bold;">
+                    <label class="la" style="padding-left: 1.9em;">Client's name</label>
+                    <div style="margin-left:1em;border: 1px solid #a0a4b0;width: 18em;">
+                        <p style="font-weight: normal;padding-left: 1em;font-size: 15px;">{{A07}}</p>
+                    </div>
+                </div>
+                <div class="row" style="font-size: 13px;font-weight: bold;">
+                    <label class="la" style="padding-right: 0.8em;">Date of Inspection</label>
+                    <div style="border: 1px solid #a0a4b0;width: 18em;">
+                        <p style="font-weight: normal;padding-left: 1em;font-size: 15px;">{{A02}}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer style="margin-top: 13em;margin-left:28em">
+            <div>
+                <img src="https://pdfgenerator1.herokuapp.com/images/rics.png" style="width: 15em;">
+            </div>
+        </footer>
+    </div>
+    <DIV id="page_2">
+        <div>
+            <P class="p4 ft4 pageNumber"></P>
+            <h1 id="page2Content">Contents</h1>
+        </div>
+
+        <DIV id="id2_1" style="margin-bottom: 2em;">
+            <P class="p5 ft7"><SPAN class="ft5">A</SPAN><SPAN class="ft6">Introduction to the report</SPAN></P>
+            <P class="p6 ft7"><SPAN class="ft5">B</SPAN><SPAN class="ft6">About the inspection</SPAN></P>
+            <P class="p6 ft7"><SPAN class="ft5">C</SPAN><SPAN class="ft8">Overall opinion and summary of the
+                    condition
+                    ratings</SPAN></P>
+            <P class="p6 ft7"><SPAN class="ft5">D</SPAN><SPAN class="ft8">About the property</SPAN></P>
+            <P class="p6 ft7"><SPAN class="ft5">E</SPAN><SPAN class="ft6">Outside the property</SPAN></P>
+            <P class="p6 ft7"><SPAN class="ft5">F</SPAN><SPAN class="ft9">Inside the property</SPAN></P>
+            <P class="p6 ft7"><SPAN class="ft5">G</SPAN><SPAN class="ft10">Services</SPAN></P>
+            <P class="p6 ft7"><SPAN class="ft5">H</SPAN><SPAN class="ft8">Grounds (including shared areas for
+                    flats)</SPAN></P>
+            <P class="p6 ft7"><SPAN class="ft11">I</SPAN><SPAN class="ft12">Issues for your legal advisers</SPAN>
+            </P>
+            <P class="p6 ft7"><SPAN class="ft5">J</SPAN><SPAN class="ft13">Risks</SPAN></P>
+            <P class="p6 ft7"><SPAN class="ft5">K</SPAN><SPAN class="ft6">Valuation</SPAN></P>
+            <P class="p7 ft15"><SPAN class="ft5">L</SPAN><SPAN class="ft14">Surveyor's declaration What to do
+                    now</SPAN>
+            </P>
+            <P class="p8 ft16">Description of the RICS HomeBuyer Service Typical house diagram</P>
+
+            <P class="p9 ft17">RICS is the world's leading qualification when it comes to
+                professional
+                standards in
+                land, property and construction.</P>
+            <P class="p10 ft17">In a world where more and more people, governments, banks and commercial
+                organisations
+                demand greater certainty of professional standards and ethics, attaining RICS status is the
+                recognised
+                mark of property professionalism.</P>
+            <P class="p11 ft17">Over 100,000 property professionals working in the major established and emerging
+                economies of the world have already recognised the importance of securing RICS status by becoming
+                members.</P>
+            <P class="p12 ft17">RICS is an independent professional body originally established in the UK by Royal
+                Charter. Since 1868, RICS has been committed to setting and upholding the highest standards of
+                excellence and integrity ­ providing impartial, authoritative advice on key issues affecting
+                businesses
+                and society.</P>
+            <P class="p13 ft17">The RICS HomeBuyer Report is reproduced with the permission of the Royal Institution
+                of
+                Chartered Surveyors who owns the copyright.</P>
+            <P class="p14 ft17">© 2010 RICS</P>
+            <div class="underPara" style="margin-left: 181px;"></div>
+
+        </DIV>
+        <footer>
+            <div class="row ml-3">
+                <div class="col">
+                    <img src="https://pdfgenerator1.herokuapp.com/images/rics.png" width="200em">
+
+                </div>
+                <div class="col" style="margin-left:9em">
+                    <img src="https://pdfgenerator1.herokuapp.com/images/RicsHomeuyerReport.jpg" width="280em">
+                </div>
+            </div>
+        </footer>
+    </DIV> --}}
+
+    <DIV id="page_3" style="counter-reset:page {{num}};">
+        <div>
+            <P class="p4 ft4 pageNumber mr-5"></P>
+            <table style="margin:0em 5em 0em">
+                <tr>
+                    <td>
+                        <img src="https://pdfgenerator1.herokuapp.com/images/homebuyer/A.jpg" width="50em">
+                    </td>
+                    <td style="padding-left:3em;">
+                        <h2 class="header1">Intoduction to the report</h2>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <DIV id="id3_1" style="margin-top:-4em;font-size:20px;">
+
+            <P class="p15 ft18">This HomeBuyer Report is produced by an RICS surveyor who has written this report for
+                you to use. If you decide not to act on the advice in this report, you do this at your own risk.</P>
+            <P class="p16 ft18">The HomeBuyer Report aims to help you:</P>
+
+            <ul class="p18 ft19">
+                <li>
+                    make a reasoned and informed decision on whether to go ahead with buying the property;
+                </li>
+                <li>
+                    make an informed decision on what is a reasonable price to pay for the property;
+                </li>
+                <li>
+                    take account of any repairs or replacements the property needs; and
+                </li>
+                <li>
+                    consider what further advice you should take before committing to purchase the
+                    property.
+                </li>
+            </ul>
+            <P class="p20 ft18">Any extra services we provide that are not covered by the terms and conditions of
+                this report must be covered by a separate contract.</P>
+
+        </DIV>
+
+    </DIV>
+
+    <DIV id="page_4" style="padding-top:2em;page-break-before: always">
+        <div>
+            <P class="p4 ft4 pageNumber mr-5"></P>
+            <table style="margin:0em 5em 0em">
+                <tr>
+                    <td>
+                        <img src="https://pdfgenerator1.herokuapp.com/images/homebuyer/B.jpg" width="50em">
+                    </td>
+                    <td style="padding-left:3em;">
+                        <h2 class="header1">About the inspection</h2>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <div style="margin-top: 2em;">
+            <table>
+                <tr>
+                    <td>
+                        <P class="p23 ft2">Surveyor's name</P>
+                    </td>
+                    <td style="padding-bottom: 1em;">
+                        <div style="
+                        border: 1px solid #a0a4b0;
+                        height: 2.5em;
+                        width: 35em;
+                    ">
+                            <p>{{breaklines A04}}</p>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <P class="p23 ft2">Surveyor's RICS number</P>
+                    </td>
+                    <td style="padding-bottom: 1em;">
+                        <div style="
+                        border: 1px solid #a0a4b0;
+                        height: 2.5em;
+                        width: 35em;
+                    ">
+                            <p>{{breaklines A05}}</p>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <P class="p23 ft2">Company name</P>
+                    </td>
+                    <td style="padding-bottom: 1em;">
+                        <div style="
+                        border: 1px solid #a0a4b0;
+                        height: 2.5em;
+                        width: 35em;
+                    ">
+                            <p>{{breaklines A011}}</p>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <P class="p23 ft2">Date of the inspection</P>
+                    </td>
+                    <td style="padding-bottom: 1em;">
+                        <div class="row">
+                            <div class="col">
+                                <div style="border: 1px solid #a0a4b0;
+                                height: 2.5em;
+                                width: 12em;
+                     ">
+                                    <p>{{breaklines A02}}</p>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <P class="ft2" style="padding-top: 1em;margin-left: -1em;">Report reference number</P>
+                            </div>
+                            <div class="col">
+                                <div class="col">
+                                    <div style="margin-right: -1em;
+                                    border: 1px solid #a0a4b0;
+                                    height: 2em;
+                                    width: 12.5em;
+                                    margin-left: -4em;
+                         ">
+                                        <p>{{breaklines A06}}</p>
+                                    </div>
+                                </div>
+                            </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <P class="p25 ft2">Related party disclosure</P>
+                    </td>
+                    <td style="padding-bottom: 1em;">
+                        <div style="
+                        border: 1px solid #a0a4b0;
+                        height: 2.5em;width: 35em;
+                    ">
+                            <p>{{breaklines B2}}</p>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <P class="p25 ft2">Full address</P>
+                        <P class="p25 ft2"> and postcode</P>
+                        <P class="p25 ft2"> of the property</P>
+                    </td>
+                    <td style="padding-bottom: 1em;">
+                        <div style="
+                        border: 1px solid #a0a4b0;
+                        height: 5em;width: 35em;
+                    ">
+                            <p>{{breaklines A09}}</p>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <P class="p25 ft2">Weather conditions</P>
+                        <P class="p25 ft2"> when the inspection</P>
+                        <P class="p25 ft2"> took place</P>
+                    </td>
+                    <td style="padding-bottom: 1em;">
+                        <div style="
+                        border: 1px solid #a0a4b0;
+                        height: 2.5em;width: 35em;
+                    ">
+                            <p>{{breaklines B4}}</p>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <P class="p25 ft2">The status of the</P>
+                        <P class="p25 ft2"> property when the</P>
+                        <P class="p25 ft2"> inspection took place</P>
+                    </td>
+                    <td style="padding-bottom: 1em;">
+                        <div style="
+                        border: 1px solid #a0a4b0;
+                        height: 4em;width: 35em;
+                    ">
+                            <p>{{breaklines B5}}</p>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </DIV>
+    <DIV id="page_5" style="padding-top:2em;page-break-before: always">
+        <div>
+            <P class="p4 ft4 pageNumber mr-5"></P>
+            <table style="margin:0em 5em 0em">
+                <tr>
+                    <td>
+                        <img src="https://pdfgenerator1.herokuapp.com/images/homebuyer/B.jpg" width="50em">
+                    </td>
+                    <td style="padding-left:3em;">
+                        <h3 class="header1">About the inspection (continued)</h3>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <DIV id="id5_1">
+            <P class="p30 ft18">We inspect the inside and outside of the main building and all permanent outbuildings,
+                but we do not force or open up the fabric. We also inspect the parts of the electricity, gas/oil, water,
+                heating and drainage services that can be seen, but we do not test them.</P>
+            <P class="p31 ft18">To help describe the condition of the home, we give condition ratings to the main parts
+                (the 'elements') of the building, garage and some parts outside. Some elements can be made up of several
+                different parts.</P>
+            <P class="p32 ft18">In the element boxes in parts E, F, G and H, we describe the part that has the worst
+                condition rating first and then briefly outline the condition of the other parts. The condition ratings
+                are described as follows.</P>
+            <img src="https://pdfgenerator1.herokuapp.com/images/homebuyer/123.PNG"
+                style="padding-left: 121px;padding-top: 2em;">
+            <P class="p36 ft18">The report covers matters that, in the surveyor's opinion, need to be dealt with or may
+                affect the value of the property.</P>
+            <P class="p37 ft17">Important note: We carry out only a visual inspection. This means that we do not take up
+                carpets, floor coverings or floorboards, move furniture or remove the contents of cupboards. Also, we do
+                not remove secured panels or undo electrical fittings.</P>
+            <P class="p38 ft17">We inspect roofs, chimneys and other surfaces on the outside of the building from ground
+                level and, if necessary, from neighbouring public property and with the help of binoculars.</P>
+            <P class="p39 ft17">We inspect the roof structure from inside the roof space if there is access (although we
+                do not move or lift insulation material, stored goods or other contents). We examine floor surfaces and
+                under­floor spaces so far as there is safe access to these (although we do not move or lift furniture,
+                floor coverings or other contents). We are not able to assess the condition of the inside of any
+                chimney, boiler or other flues.</P>
+            <P class="p40 ft17">We note in our report if we are not able to check any parts of the property that the
+                inspection would normally cover. If we are concerned about these parts, the report will tell you about
+                any further investigations that are needed.</P>
+            <P class="p41 ft17">We do not report on the cost of any work to put right defects or make recommendations on
+                how these repairs should be carried out. Some maintenance and repairs we suggest may be expensive.</P>
+
+        </DIV>
+    </DIV>
+</BODY>
+
+</HTML>

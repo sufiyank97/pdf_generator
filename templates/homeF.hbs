@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<HTML>
+
+
+<HEAD>
+    <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <TITLE>Example HomeBuyer Report - HouzeCheck (1)</TITLE>
+    <META name="generator" content="BCL easyConverter SDK 5.0.210">
+    <link rel="stylesheet" href="https://pdfgenerator1.herokuapp.com/homebuyer.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <style>
+        body {
+            counter-reset: page 1;
+        }
+
+        .img1 {
+            margin-top: 3em;
+            width: 11em;
+            margin-left: 40em;
+        }
+
+        .img2 {
+            width: 50em;
+            margin: auto;
+            display: block;
+            margin-top: 15em;
+        }
+
+        .div1 {
+
+            margin-top: 15em;
+        }
+
+        #page2Content {
+            font-family: Century Schoolbook;
+            margin-left: 5em;
+            border-bottom: 2px solid #a0a4b0;
+            border-width: thick;
+            width: 10em;
+        }
+
+        .underPara {
+            border-bottom: 2px solid #a0a4b0;
+            border-width: thick;
+            width: 20em;
+        }
+
+        .pageNumber::after {
+            counter-increment: page;
+            content: counter(page);
+        }
+
+        .header1 {
+            font-family: Century Schoolbook;
+            border-bottom: 2px solid #a0a4b0;
+            border-width: thick;
+            width: 14em;
+        }
+
+
+
+
+        .content-block {
+            position: absolute;
+            overflow: visible;
+            overflow: auto
+        }
+
+        .tt1 {
+            border-bottom: 1px solid #a0a4b0;
+        }
+
+        .tt1 tr:last-child td:last-child {
+            border-bottom: 1px solid #a0a4b0;
+            width: 18em;
+        }
+
+        .tt1 tr {
+            line-height: 1px;
+        }
+
+        .tt1 tr:last-child {
+            line-height: 0px;
+        }
+
+        .tt2 tr td:first-child {
+            vertical-align: baseline;
+        }
+
+        .para {
+            padding-left: 0.5em;
+            line-height: 1.5em;
+            padding-top: 0.5em;
+            padding-bottom: 0.5em;
+            padding-right: 0.1px;
+            font-size: 15px;
+        }
+    </style>
+</HEAD>
+
+<BODY>
+    <DIV id="page_11" style="counter-reset:page {{num}};overflow:visible;">
+        <div style="margin-top: -1.5em;">
+            <div style="margin-left: 8.8em; margin-top:-1em">
+                <P class="p80 ft31" style="font-size:18px;">Limitations to inspection</P>
+                <div style="border: 1px solid #a0a4b0;margin-top:1em;
+                font-size: 15px;width:38em;" class="para">{{breaklines1 F0.value}}</div><br>
+                <div style="text-align: end;margin-right:5.5em;">
+                    <img src="https://pdfgenerator1.herokuapp.com/images/homebuyer/123n.PNG">
+                </div>
+            </div>
+            <div style="margin-left: -1.8em;">
+                <table style="margin-left:1em;border-collapse:separate;border-spacing:0 10px;" class="tt2">
+                    <tr>
+                        <td>
+                            <div style="text-align: end;font-size: 13px;">
+                                F1<br>
+                                Roof Structure
+                            </div>
+                        </td>
+                        <td style="padding-left: 1.4em;">
+                            <div style="
+                border: 1px solid #a0a4b0;
+                font-size: 15px;width:38em;
+            ">
+                                <table>
+                                    <tr>
+                                        <td class="para">
+                                            {{breaklines1 F1.value}}
+                                        </td>
+                                        <td style="vertical-align: top;">
+                                            {{#ifEquals F1.rating 1}}
+                                            <img src="https://pdfgenerator1.herokuapp.com/images/homebuyer/s1.png">
+                                            {{else}}
+                                            {{#ifEquals F1.rating 2}}
+                                            <img src="https://pdfgenerator1.herokuapp.com/images/homebuyer/s2.png">
+                                            {{else}}
+                                            {{#ifEquals F1.rating 3}}
+                                            <img src="https://pdfgenerator1.herokuapp.com/images/homebuyer/s3.png">
+                                            {{else}}
+                                            <img src="https://pdfgenerator1.herokuapp.com/images/homebuyer/sni.png">
+                                            {{/ifEquals}}{{/ifEquals}}{{/ifEquals}}
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </td>
+                    </tr>
+
+
+                    <tr>
+                        <td>
+                            <div style="text-align: end;font-size: 13px;">
+                                F2<br>
+                                Ceilings
+                            </div>
+                        </td>
+                        <td style="padding-left: 1.4em;">
+                            <div style="
+                border: 1px solid #a0a4b0;
+                font-size: 15px;width:38em;
+            ">
+                                <table>
+                                    <tr>
+                                        <td class="para">
+                                            {{breaklines1 F2.value}}
+                                        </td>
+                                        <td style="vertical-align: top;">
+                                            {{#ifEquals F2.rating 1}}
+                                            <img src="https://pdfgenerator1.herokuapp.com/images/homebuyer/s1.png">
+                                            {{else}}
+                                            {{#ifEquals F2.rating 2}}
+                                            <img src="https://pdfgenerator1.herokuapp.com/images/homebuyer/s2.png">
+                                            {{else}}
+                                            {{#ifEquals F2.rating 3}}
+                                            <img src="https://pdfgenerator1.herokuapp.com/images/homebuyer/s3.png">
+                                            {{else}}
+                                            <img src="https://pdfgenerator1.herokuapp.com/images/homebuyer/sni.png">
+                                            {{/ifEquals}}{{/ifEquals}}{{/ifEquals}}
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </td>
+                    </tr>
+
+
+                    <tr>
+                        <td>
+                            <div style="text-align: end;font-size: 13px;width:10em;">
+                                F3<br>
+                                Walls and partitions
+                            </div>
+                        </td>
+                        <td style="padding-left: 1.4em;">
+                            <div style="
+                border: 1px solid #a0a4b0;
+                font-size: 15px;width:38em;
+            ">
+                                <table>
+                                    <tr>
+                                        <td class="para">
+                                            {{breaklines1 F3.value}}
+                                        </td>
+                                        <td style="vertical-align: top;">
+                                            {{#ifEquals F3.rating 1}}
+                                            <img src="https://pdfgenerator1.herokuapp.com/images/homebuyer/s1.png">
+                                            {{else}}
+                                            {{#ifEquals F3.rating 2}}
+                                            <img src="https://pdfgenerator1.herokuapp.com/images/homebuyer/s2.png">
+                                            {{else}}
+                                            {{#ifEquals F3.rating 3}}
+                                            <img src="https://pdfgenerator1.herokuapp.com/images/homebuyer/s3.png">
+                                            {{else}}
+                                            <img src="https://pdfgenerator1.herokuapp.com/images/homebuyer/sni.png">
+                                            {{/ifEquals}}{{/ifEquals}}{{/ifEquals}}
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </td>
+                    </tr>
+
+
+
+                    <tr>
+                        <td>
+                            <div style="text-align: end;font-size: 13px;">
+                                F4<br>
+                                Floors
+                            </div>
+                        </td>
+                        <td style="padding-left: 1.4em;">
+                            <div style="
+                border: 1px solid #a0a4b0;
+                font-size: 15px;width:38em;
+            ">
+                                <table>
+                                    <tr>
+                                        <td class="para">
+                                            {{breaklines1 F4.value}}
+                                        </td>
+                                        <td style="vertical-align: top;">
+                                            {{#ifEquals F4.rating 1}}
+                                            <img src="https://pdfgenerator1.herokuapp.com/images/homebuyer/s1.png">
+                                            {{else}}
+                                            {{#ifEquals F4.rating 2}}
+                                            <img src="https://pdfgenerator1.herokuapp.com/images/homebuyer/s2.png">
+                                            {{else}}
+                                            {{#ifEquals F4.rating 3}}
+                                            <img src="https://pdfgenerator1.herokuapp.com/images/homebuyer/s3.png">
+                                            {{else}}
+                                            <img src="https://pdfgenerator1.herokuapp.com/images/homebuyer/sni.png">
+                                            {{/ifEquals}}{{/ifEquals}}{{/ifEquals}}
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </td>
+                    </tr>
+
+
+
+                    <tr>
+                        <td>
+                            <div style="text-align: end;font-size: 13px;">
+                                F5<br>
+                                Fireplaces,Chimney<br>
+                                breasts and flues
+                            </div>
+                        </td>
+                        <td style="padding-left: 1.4em;">
+                            <div style="
+                border: 1px solid #a0a4b0;
+                font-size: 15px;width:38em;
+            ">
+                                <table>
+                                    <tr>
+                                        <td class="para">
+                                            {{breaklines1 F5.value}}
+                                        </td>
+                                        <td style="vertical-align: top;">
+                                            {{#ifEquals F5.rating 1}}
+                                            <img src="https://pdfgenerator1.herokuapp.com/images/homebuyer/s1.png">
+                                            {{else}}
+                                            {{#ifEquals F5.rating 2}}
+                                            <img src="https://pdfgenerator1.herokuapp.com/images/homebuyer/s2.png">
+                                            {{else}}
+                                            {{#ifEquals F5.rating 3}}
+                                            <img src="https://pdfgenerator1.herokuapp.com/images/homebuyer/s3.png">
+                                            {{else}}
+                                            <img src="https://pdfgenerator1.herokuapp.com/images/homebuyer/sni.png">
+                                            {{/ifEquals}}{{/ifEquals}}{{/ifEquals}}
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </td>
+                    </tr>
+
+
+                    <tr>
+                        <td>
+                            <div style="text-align: end;font-size: 13px;width:10em;">
+                                F6<br>
+                                Built­in fittings(built
+                                in kitchen and other fittings,
+                                not including appliances)
+                            </div>
+                        </td>
+                        <td style="padding-left: 1.4em;">
+                            <div style="
+                border: 1px solid #a0a4b0;
+                font-size: 15px;width:38em;
+            ">
+                                <table>
+                                    <tr>
+                                        <td class="para">
+                                            {{breaklines1 F6.value}}
+                                        </td>
+                                        <td style="vertical-align: top;">
+                                            {{#ifEquals F6.rating 1}}
+                                            <img src="https://pdfgenerator1.herokuapp.com/images/homebuyer/s1.png">
+                                            {{else}}
+                                            {{#ifEquals F6.rating 2}}
+                                            <img src="https://pdfgenerator1.herokuapp.com/images/homebuyer/s2.png">
+                                            {{else}}
+                                            {{#ifEquals F6.rating 3}}
+                                            <img src="https://pdfgenerator1.herokuapp.com/images/homebuyer/s3.png">
+                                            {{else}}
+                                            <img src="https://pdfgenerator1.herokuapp.com/images/homebuyer/sni.png">
+                                            {{/ifEquals}}{{/ifEquals}}{{/ifEquals}}
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </td>
+                    </tr>
+
+
+
+                    <tr>
+                        <td>
+                            <div style="text-align: end;font-size: 13px;">
+                                F7<br>
+                                Woodwork (for<br>
+                                example, staircase<br>
+                                and joinery)<br>
+                            </div>
+                        </td>
+                        <td style="padding-left: 1.4em;">
+                            <div style="
+                border: 1px solid #a0a4b0;
+                font-size: 15px;width:38em;
+            ">
+                                <table>
+                                    <tr>
+                                        <td class="para">
+                                            {{breaklines1 F7.value}}
+                                        </td>
+                                        <td style="vertical-align: top;">
+                                            {{#ifEquals F7.rating 1}}
+                                            <img src="https://pdfgenerator1.herokuapp.com/images/homebuyer/s1.png">
+                                            {{else}}
+                                            {{#ifEquals F7.rating 2}}
+                                            <img src="https://pdfgenerator1.herokuapp.com/images/homebuyer/s2.png">
+                                            {{else}}
+                                            {{#ifEquals F7.rating 3}}
+                                            <img src="https://pdfgenerator1.herokuapp.com/images/homebuyer/s3.png">
+                                            {{else}}
+                                            <img src="https://pdfgenerator1.herokuapp.com/images/homebuyer/sni.png">
+                                            {{/ifEquals}}{{/ifEquals}}{{/ifEquals}}
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </td>
+                    </tr>
+
+
+
+                    <tr>
+                        <td>
+                            <div style="text-align: end;font-size: 13px;">
+                                F8<br>
+                                Bathroom fittings
+                            </div>
+                        </td>
+                        <td style="padding-left: 1.4em;">
+                            <div style="
+                border: 1px solid #a0a4b0;
+                font-size: 15px;width:38em;
+            ">
+                                <table>
+                                    <tr>
+                                        <td class="para">
+                                            {{breaklines1 F8.value}}
+                                        </td>
+                                        <td style="vertical-align: top;">
+                                            {{#ifEquals F8.rating 1}}
+                                            <img src="https://pdfgenerator1.herokuapp.com/images/homebuyer/s1.png">
+                                            {{else}}
+                                            {{#ifEquals F8.rating 2}}
+                                            <img src="https://pdfgenerator1.herokuapp.com/images/homebuyer/s2.png">
+                                            {{else}}
+                                            {{#ifEquals F8.rating 3}}
+                                            <img src="https://pdfgenerator1.herokuapp.com/images/homebuyer/s3.png">
+                                            {{else}}
+                                            <img src="https://pdfgenerator1.herokuapp.com/images/homebuyer/sni.png">
+                                            {{/ifEquals}}{{/ifEquals}}{{/ifEquals}}
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </td>
+                    </tr>
+
+
+
+                    <tr>
+                        <td>
+                            <div style="text-align: end;font-size: 13px;">
+                                F9<br>
+                                Other
+                            </div>
+                        </td>
+                        <td style="padding-left: 1.4em;">
+                            <div style="
+                border: 1px solid #a0a4b0;
+                font-size: 15px;width:38em;
+            ">
+                                <table>
+                                    <tr>
+                                        <td class="para">
+                                            {{breaklines1 F9.value}}
+                                        </td>
+                                        <td style="vertical-align: top;">
+                                            {{#ifEquals F9.rating 1}}
+                                            <img src="https://pdfgenerator1.herokuapp.com/images/homebuyer/s1.png">
+                                            {{else}}
+                                            {{#ifEquals F9.rating 2}}
+                                            <img src="https://pdfgenerator1.herokuapp.com/images/homebuyer/s2.png">
+                                            {{else}}
+                                            {{#ifEquals F9.rating 3}}
+                                            <img src="https://pdfgenerator1.herokuapp.com/images/homebuyer/s3.png">
+                                            {{else}}
+                                            <img src="https://pdfgenerator1.herokuapp.com/images/homebuyer/sni.png">
+                                            {{/ifEquals}}{{/ifEquals}}{{/ifEquals}}
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+        </div>
+    </DIV>
+</BODY>
+
+</HTML>

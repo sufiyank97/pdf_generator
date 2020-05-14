@@ -1,0 +1,508 @@
+{
+    "job_id": "902dd6ac1bdcd0509d4ba688bd4bcbc9",
+    "template": {
+        "id": "22c5a2a31b4f08509d4ba688bd4bcbec",
+        "name": "HomeBuyer Survey"
+    },
+    "variables": [
+        {
+            "name": "A0.1",
+            "value": "",
+            "rating": "",
+            "images": [
+                {
+                    "name": "d1.jpg",
+                    "caption": "d1",
+                    "image_url": "https://houzecheckdev.service-now.com/d1.jpg",
+                    "order": 1
+                },
+                {
+                    "name": "d2.jpg",
+                    "caption": "d2",
+                    "image_url": "https://houzecheckdev.service-now.com/d2.jpg",
+                    "order": 2
+                }
+            ]
+        },
+        {
+            "name": "A0.3",
+            "value": "",
+            "rating": "",
+            "images": []
+        },
+        {
+            "name": "A0.7",
+            "value": "Amit Bansal",
+            "rating": "",
+            "images": []
+        },
+        {
+            "name": "A0.11",
+            "value": "HouzeCheck Limited",
+            "rating": "",
+            "images": []
+        },
+        {
+            "name": "B4",
+            "value": "Dry and overcast",
+            "rating": "",
+            "images": []
+        },
+        {
+            "name": "C3",
+            "value": "",
+            "rating": "",
+            "images": []
+        },
+        {
+            "name": "D4",
+            "value": "2011",
+            "rating": "",
+            "images": []
+        },
+        {
+            "name": "D8",
+            "value": "",
+            "rating": "",
+            "images": []
+        },
+        {
+            "name": "D10",
+            "value": "Other Services are not applicable",
+            "rating": "",
+            "images": []
+        },
+        {
+            "name": "D14",
+            "value": "The British Geological Survey map for this area indicates the subject property is likely to be built on a subsoil and bedrock containing a mixture of sand and gravel.\nThe Environment Agency map confirms that the property is not in a flood risk area from rivers.\nHowever, there is a high­risk of surface water flooding to the front of the property and to the side passageway and rear garden.\nThere are no confirmed reports of Japanese Knotweed in the area.",
+            "rating": "",
+            "images": []
+        },
+        {
+            "name": "E2",
+            "value": "Roof coverings\nThe main sloping roof is covered with concrete pan­tiles over a secondary waterproof barrier (roofing felt).\nThe roof tiles are the original installation and appears in good condition when inspected through binoculars at ground level.\nThe undercloak supporting the roof tiles to the gable end wall, is most probably consisting of asbestos containing materials (ACM). This is not an issue unless roof repairs are ever required at this verge detail.\nAsbestos should only be removed by licensed operators.\nThere is a lead valley gutter detail to front elevation low level roof which is a shared roof with the attached neighbour.\nThere is some lichen/moss debris within the lead valley gutter that should be cleared out at some point in the future before it collects in the guttering and blocks the downpipes.\nThis is a minor issue, that you should just be aware of.",
+            "rating": 2,
+            "images": []
+        },
+        {
+            "name": "E6",
+            "value": "The rear external double doors are uPVC and double glazed and form part of the conservatory construction.\nThe front entrance door is a composite door.\nBoth doors have been fitted with a multi­locking system which should comply with insurance security requirements. This will need to be confirmed with your insurer..",
+            "rating": 3,
+            "images": []
+        },
+        {
+            "name": "F0",
+            "value": "Although a condition rating has been allocated, the inspection of the concrete and timber floors was restricted because of floor coverings to all areas.",
+            "rating": 1,
+            "images": []
+        },
+        {
+            "name": "F4",
+            "value": "The floors to the ground floor are covered with large ceramic tiles throughout.\nThe stairs, landing and bedrooms are carpet and the two bathrooms are ceramic tiles. All appeared to be in good condition.",
+            "rating": 1,
+            "images": []
+        },
+        {
+            "name": "F8",
+            "value": "The cloakroom wash hand basin has a wall hung pedestal below it which has not been fixed back to the wall correctly and is currently supported by a timber prop.\nThe pop­up waste also requires re­fitting.\nThe towel rail to the cloakroom is beginning to rust and deteriorate where it has been splashed adjacent to the WC pan.\nThe three WC pans within the property do not fix back flush to the wall behind (See section F9).\nThere is a bowl placed under the radiator valve to the en­suite bathroom towel rail. I did not see any water staining but the bowl suggests that there may be a leak?",
+            "rating": 2,
+            "images": []
+        },
+        {
+            "name": "G2",
+            "value": "There is a mains gas supply, and the meter and control valve are located in the external meter cabinet at low level to the front elevation.\nThe boiler is located within a kitchen wall cupboard and appears to be the original installation. It is therefore past its effective life­span and will require replacement in due course.\nA Gas Safe service certificate is required for the boiler.\nAs I was not shown a current Gas Safe inspection certificate, I have had to report this section as a condition rating 3 and would recommend that a Gas Safe engineer undertakes a gas test and inspection and issues a certificate of compliance.\nThis is always recommended for every year or whenever a new owner purchases a property.\nYou can find a Gas Safe registered qualified gas engineer by searching the Gas Safe website http://www.gassaferegister.co.uk",
+            "rating": 3,
+            "images": []
+        },
+        {
+            "name": "G6",
+            "value": "The waste soil pipes are fitted internally and boxed in.\nIt is assumed that the pipes connect under the suspended beam and block concrete floor to the external drainage. There is a circular external inspection chamber in the front pathway and this will connect to the external sewer pipes in the road.\nI was unable to remove the inspection cover and have therefore noted this section as 'Not inspected'.",
+            "rating": 1,
+            "images": []
+        },
+        {
+            "name": "H1",
+            "value": "Not Garage",
+            "rating": "",
+            "images": []
+        },
+        {
+            "name": "I2",
+            "value": "E7 Conservatory: Warrenties for glazing and structure.",
+            "rating": "",
+            "images": []
+        },
+        {
+            "name": "J3",
+            "value": "F2 ­ Possible Asbestos Containing Material within the artex coating to all ceilings and to the under­cloak of the house and porch roof tiles, at the external verge.\nF7 ­ The lack of safety handrail to the staircase.\nF8 ­ The cloakroom wash hand basin pedestal requires re­fixing to the wall. H3 ­ The rear timber decking is slippery to walk upon.",
+            "rating": "",
+            "images": []
+        },
+        {
+            "name": "K3",
+            "value": "",
+            "rating": "",
+            "images": []
+        },
+        {
+            "name": "A0.4",
+            "value": "John Burrows",
+            "rating": "",
+            "images": []
+        },
+        {
+            "name": "A0.8",
+            "value": "",
+            "rating": "",
+            "images": []
+        },
+        {
+            "name": "B1",
+            "value": "",
+            "rating": "",
+            "images": []
+        },
+        {
+            "name": "B5",
+            "value": "Whilst the property was occupied, it was fully furnished with floor coverings throughout, restricting our inspection.",
+            "rating": "",
+            "images": []
+        },
+        {
+            "name": "D1",
+            "value": "A two bedroom semi­detached that has been extended to the rear with a conservatory.\nThe front elevation of the property is roughly east facing. All directions given in this report assume the reader is standing on the public road, facing the front of the property.",
+            "rating": "",
+            "images": []
+        },
+        {
+            "name": "D5",
+            "value": "Not Applicable",
+            "rating": "",
+            "images": []
+        },
+        {
+            "name": "D9",
+            "value": "",
+            "rating": "",
+            "images": []
+        },
+        {
+            "name": "D11",
+            "value": "The property has a private rear garden area, with timber decking and shed. There is no garage.\nThere is off­street allocated parking for two cars.",
+            "rating": "",
+            "images": []
+        },
+        {
+            "name": "D15",
+            "value": "",
+            "rating": "",
+            "images": []
+        },
+        {
+            "name": "E3",
+            "value": "The rainwater pipes and gutters are made of plastic.\nNo repair is currently needed. The property must be maintained in the normal way, which includes cleaning out debris on an annual basis to maintain water flow to the gutters.\nThis includes the rear conservatory.",
+            "rating": 3,
+            "images": []
+        },
+        {
+            "name": "E7",
+            "value": "The rear conservatory is approx. five years old and is in good structural condition.\nThe pleated blinds to the ceiling and windows have slightly deteriorated as some of the blinds have started to crease and loose their shape at the edges. These may be beyond repair and may need to be replaced in due course.",
+            "rating": 3,
+            "images": []
+        },
+        {
+            "name": "F1",
+            "value": "The roof is in good condition.\nThe roof structure is built of timber trusses and is well ventilated.\nThe roof space has approx 100mm thermal insulation on the top of the ceiling but this does not meet current building regulation guidelines of 270mm overall thickness.\nThere is chipboard decking through the centre of the loft that is used for storage.\nThe under­felt to the roof tiles is intact and I did not see any sign of roof leaks. However, the original soil and vent pipe has been removed and replaced with an internal 'durgo vent valve' and the original roof vent and cowl has been left in position. The under­felt had been originally poorly cut to allow the pipe to pass through the roof and has never been sealed off properly.\nWhilst I could not see any rainwater penetration, this pipe and cowl remains a minor weak point in the roof for allowing insects in to the loft and ought to be removed and sealed off correctly. However, given that there is a conservatory below the roof to the rear, access to this would be difficult and would need to be undertaken from the front elevation.\nThis is not an essential repair requirement but just one that you need to be aware of. There is a light within the loft that is operated from the landing below.\nThere isn't a loft ladder to access the loft space.\nThe only other minor observation is that there is a missing piece of block­work/mortar to the cavity party wall with the neighbour. This does not affect stability the roof or wall.",
+            "rating": 3,
+            "images": []
+        },
+        {
+            "name": "F5",
+            "value": "Not Applicable.",
+            "rating": "",
+            "images": []
+        },
+        {
+            "name": "F9",
+            "value": "I understand that the bathrooms and cloakroom were refurbished within the past two years. It appears that tiling and a wipeable sheet material were added to the walls.\nUnfortunately, there are minor areas where the wall panel has not been finished neatly.\nFor example, where the radiator pipes pass through the wall panel to connect to the towel rails, the holes are twice as large than they need to be.\nThere is a gap between the panel and skirting in the cloakroom and there is a deep gauge adjacent to the shaver socket in the en­suite bathroom.\nI do not think it will be easy to repair these wall panels and you may need to obtain information from the seller as to what the product is, where they purchased it from and to whether they will be completing the works properly.\nThere are some plaster stains on the uPVC windows adjacent to the wall panels that ought to be cleaned off as it looks unsightly.",
+            "rating": 3,
+            "images": []
+        },
+        {
+            "name": "G3",
+            "value": "There is an independent mains water supply to the property. The external stop valve is in the pavement to the front elevation.\nThe internal stop valve is believed to be under the kitchen sink but I could not verify this.\nStopcocks can become stiff and difficult to operate. It would be prudent therefore to periodically open and close the valves to ensure their effectiveness in an emergency.",
+            "rating": 2,
+            "images": []
+        },
+        {
+            "name": "G7",
+            "value": "There are a number of control panel gadgets on the ground floor walls.\nYou will need to clarify with the present owners as to what panel does what, as it is not clear what they all are.\nThere appears to be a security alarm panel, fire alarm, underfloor heating and central heating control panel.\nThe smoke detector has been disconnected in the kitchen and is missing from the ceiling.",
+            "rating": 3,
+            "images": []
+        },
+        {
+            "name": "H2",
+            "value": "The rear garden shed doors are in need of repair or replacement as they are damaged.",
+            "rating": 3,
+            "images": []
+        },
+        {
+            "name": "I3",
+            "value": "H3: Liabilities for maintenance/ownership of boundaries.\nThe environmental flood risk Map high­lights a high­risk of surface water flooding around the property. Please ask your legal representatives to verify with your vendors.\nAscertain if there are any rights of way over the subject property in favour of third parties or statutory bodies of which we are not aware of at the time of inspection.\nWe recommend you request your legal advisor to investigate the existence of any covenants or rights of way in relation to the property and also to the existence of any current planning applications with regard to adjoining properties or land.\nWe understand that the property is to be sold freehold with vacant possession.",
+            "rating": "",
+            "images": []
+        },
+        {
+            "name": "J4",
+            "value": "Not Applicable.",
+            "rating": "",
+            "images": []
+        },
+        {
+            "name": "K4",
+            "value": "",
+            "rating": "",
+            "images": []
+        },
+        {
+            "name": "A0.5",
+            "value": "614637",
+            "rating": "",
+            "images": []
+        },
+        {
+            "name": "A0.9",
+            "value": "67, Newhouse Crescent \nWatford\nWD257HU",
+            "rating": "",
+            "images": []
+        },
+        {
+            "name": "B2",
+            "value": "The client is not related",
+            "rating": "",
+            "images": []
+        },
+        {
+            "name": "C1",
+            "value": "A neat and tidy semi detached house in good condition.\nI am pleased to advise you that in my opinion this property is, on the whole, a reasonable proposition for purchase at a price of £408,000.\nI found no evidence of any significant problems, other than the missing staircase handrail and balustrading and various minor issues as highlighted in this report and I cannot foresee any special difficulties arising on resale in normal market conditions.",
+            "rating": "",
+            "images": []
+        },
+        {
+            "name": "D2",
+            "value": "2001",
+            "rating": "",
+            "images": []
+        },
+        {
+            "name": "D6",
+            "value": "The property is built using traditional materials and techniques. The roof is built of timber trussed roof with concrete pan­tiles. The ground floor is built of suspended concrete beam and block. The first floor is built of suspended timber.\nThe outside walls are built of brick and block cavity, dry­lined internally.",
+            "rating": "",
+            "images": []
+        },
+        {
+            "name": "D9.1",
+            "value": "C74",
+            "rating": "",
+            "images": []
+        },
+        {
+            "name": "D12",
+            "value": "The property is situated in a mixture of residential and industrialisation area and is at the end of a cul­de­sac.\nThe property is in an area known as north Watford and is approximately five minutes drive north of Watford town centre.\nWatford junction Railway Station is approx. 1/2 mile from the subject property and is on the mainline connection to London Euston station, making the property desirable for London commuters.",
+            "rating": "",
+            "images": []
+        },
+        {
+            "name": "E0",
+            "value": "Although a condition rating has been allocated, my inspection of the roofs was restricted as it was from ground level.",
+            "rating": "",
+            "images": []
+        },
+        {
+            "name": "E4",
+            "value": "The outside walls are built of brick and block, with an air gap between the inside and outside faces (called a cavity wall). Where visible, the walls have a barrier against dampness rising from the ground (called a damp­proof course or DPC) consisting of a meshed polypropylene.\nIt is assumed that there is cavity insulation given the recent construction age of the property.\nThe rear wall has an extractor fan hole above the conservatory roof, which has its outer grille flaps missing. I'm not certain what this extractor outlet serves or that it is currently used, as I could find no evidence internally as to what it could be connected to.\nThe unit needs to be repaired to prevent bird, insect or vermin access or removed and infilled with brickwork if it is no longer in use.\nOtherwise, no other repair is currently needed. The property must be maintained in the normal way.",
+            "rating": 3,
+            "images": []
+        },
+        {
+            "name": "E8",
+            "value": "A small lean­to timber shelter has been added to the side passageway, providing some weather protection to allow storage of bikes, etc.\nThe side gate to the garden has slight damage at low level to the inside section of timber and possibly requires a minor repair. I wasn't able to test the operation of the gate due to access limitations.",
+            "rating": 2,
+            "images": []
+        },
+        {
+            "name": "F2",
+            "value": "The ceilings are made of modern plasterboard and are in good condition.\nA textured decorative coating covers the ceilings to all rooms. This may contain small amounts of asbestos fibres and if disturbed, they could be a safety hazard (see section J3 Risks).\nCeilings coated in artex prior to 1999 may contain asbestos containing material (ACM's). If you redecorate the ceiling, you should wear the appropriate dust masks and be careful not to dislodge any of the textured coatings.\nA test and report system exists to check for ACM's that will clarify the artex content before undertaking any repairs, should you wish to do so.\nIf you decide to disturb or remove the ceilings, this should be undertaken by a specialist asbestos removal company.",
+            "rating": 2,
+            "images": []
+        },
+        {
+            "name": "F6",
+            "value": "The kitchen units appeared in reasonable condition. However, the hardwood worktop requires regular timber sealing treatment to protect the wood surface and there are black water stain marks adjacent to the kitchen sink that have penetrated in to the wood surface. This will need to be sanded down and re­sealed to prevent further decay.\nI was unable to inspect the two wardrobe doors to the master bedroom cupboard, due to a TV fixed to one door and other obstructions.\nThere is a ground floor cupboard under the stairs used for storage and has access to an alarm panel.\nThe cupboard off the landing has a hot water cylinder and is used as an airing cupboard.",
+            "rating": 1,
+            "images": []
+        },
+        {
+            "name": "G0",
+            "value": "It is not possible to verify the condition of the underground supply pipe from the water authority mains to the point of entry into the property. This length of pipework is typically the responsibility of the owner. However, being a relatively new property, I do not think that this will be an issue for concern.",
+            "rating": 2,
+            "images": []
+        },
+        {
+            "name": "G4",
+            "value": "The heating is provided by an ICOS HE18 Boiler.\nPlease see comment in section G2 regarding age and condition of boiler.\nThere are radiators in all rooms and the temperature control unit is in the hallway. However, the radiators were not on during my visit and I can not vouch for the heatings efficiency.\nSome of the radiators/towel rails do not have individual thermostatic radiator valves (TRVs) fitted ­ or in some cases, any radiator valves at all ­ which allows for the heat to be controlled in each room. This is recommended for good heat control.\nPlease see section G1 regarding underfloor heating to the ground floor.",
+            "rating": 1,
+            "images": []
+        },
+        {
+            "name": "G8",
+            "value": "",
+            "rating": "",
+            "images": []
+        },
+        {
+            "name": "H3",
+            "value": "We found no evidence of invasive species, such as Japanese Knotweed, although it is possible such evidence may have been concealed. My desktop research revealed that there have not been any cases reported of Japanese Knotweed in this area within two miles.\nThe rear boundaries are predominately of timber fencing and in reasonable condition.\nThe rear timber decking requires re­coating with a wood­stain treatment and is quite slippery to walk upon at present. There also appears to be deflective movement in a section outside the rear conservatory doors. This may require additional timber support below the boarding at this point.\nThe neighbouring industrial unit has a number of air­conditioning units adjacent to the rear garden fence. You need to be aware that these may become quite noisy during the summer months when you are using the rear garden.\nThere are two allocated parking spaces directly outside the front of the property.",
+            "rating": 2,
+            "images": []
+        },
+        {
+            "name": "J1",
+            "value": "There are none.",
+            "rating": "",
+            "images": []
+        },
+        {
+            "name": "K1",
+            "value": "",
+            "rating": "",
+            "images": []
+        },
+        {
+            "name": "K5",
+            "value": "",
+            "rating": "",
+            "images": []
+        },
+        {
+            "name": "A0.2",
+            "value": "14th March 2020",
+            "rating": "",
+            "images": []
+        },
+        {
+            "name": "A0.6",
+            "value": "HC1300001",
+            "rating": "",
+            "images": []
+        },
+        {
+            "name": "A0.10",
+            "value": "",
+            "rating": "",
+            "images": []
+        },
+        {
+            "name": "B3",
+            "value": "",
+            "rating": "",
+            "images": []
+        },
+        {
+            "name": "C2",
+            "value": "",
+            "rating": "",
+            "images": []
+        },
+        {
+            "name": "D3",
+            "value": "2009",
+            "rating": "",
+            "images": []
+        },
+        {
+            "name": "D7",
+            "value": "",
+            "rating": "",
+            "images": []
+        },
+        {
+            "name": "D9.2",
+            "value": "C77",
+            "rating": "",
+            "images": []
+        },
+        {
+            "name": "D13",
+            "value": "The property is in good proximity of the usual urban amenities, providing for every day essentials and more. It is close to schools, healthcare and shops.",
+            "rating": "",
+            "images": []
+        },
+        {
+            "name": "E1",
+            "value": "There are no chimney stacks",
+            "rating": 1,
+            "images": []
+        },
+        {
+            "name": "E5",
+            "value": "The double­glazed windows are made of Upvc and appear to be from the original construction of nearly twenty years ago. This means that these windows have exceeded their life expectancy and will probably require replacement or at least the double glazed sealed units replaced, in the next few years.\nHowever, I could not find any defect with the windows other than slightly loose handles (e.g. rear bedroom).\nThey have trickle ventilation and the windows that I opened worked satisfactorily.\nThey have security locks within their handles but I could not see any window key locks available to test their operation. You should ensure that these are made available to you for your future use.",
+            "rating": 2,
+            "images": []
+        },
+        {
+            "name": "E9",
+            "value": "Not Applicable",
+            "rating": "",
+            "images": []
+        },
+        {
+            "name": "F3",
+            "value": "The faces of the external walls are covered with boarding that produce a hollow sound when tapped. This is usually called 'dry lining'.\nThe internal walls are timber stud partitions and plasterboard. The walls and partitions are in good condition.",
+            "rating": 1,
+            "images": []
+        },
+        {
+            "name": "F7",
+            "value": "The staircase does not have a handrail or any protection from falling.\nThis has been removed in the past and does not meet the building regulation standards.\nI highly recommend that a newel post, handrail and balustrades are re­installed for the safety of all inhabitants. A fall from the stairs on to a hard floor below could be catastrophic.\nThe doors between the lounge and conservatory have been removed and stored within the loft space.\nThe door to the master bedroom does not fully open, as it catches on the carpet and the family bathroom door slightly catches on the floor tiles. Both doors require easing and adjustment.\nThe kitchen window cill is loose as it has not been fixed in to position.",
+            "rating": 2,
+            "images": []
+        },
+        {
+            "name": "G1",
+            "value": "There is a mains electricity supply and the meter is located in the external meter cabinet fixed on the front elevation. The electricity supply was on when I inspected.\nThe consumer unit is located at high level in the ground floor cloakroom and it appears to be the original installation.\nIt does contain Residual Current Device (RCDs), which is a safety feature that protects from electric shocks and cuts out the supply to faulty wiring.\nThere is an electrical box fitted upside down in the cloakroom below the consumer unit. It is not clear what this is for and it is a concern that it has been refixed upside down after the wall panel installation (See section F9).\nThere are some loose cables at high level adjacent to the front entrance door. It may be a disconnected movement sensor but this needs to be investigated further.\nThere is underfloor heating to the ground floor. However, I did not see this in operation and I understand from the present owners that they do not use it, as they stated it gets too warm.\nIt could be that the underfloor heating might not work. Depending upon the date of installation, the electrical underfloor heating can stop working if there's a break in the cables. This should be investigated by an electrician to verify that it is working satisfactorily.\nAs I was not shown a current electrical inspection certificate, I have had to report this section as a condition rating 3 and would recommend that an electrician undertakes an electrical test and inspection and issues a certificate of compliance.\nThis is always recommended for every 10 years or whenever a new owner purchases a property.\nYou can find a qualified electrician to test the electricity by searching the Electrical Safety Council's website http://www.esc.org.uk/public/findanelectrician/",
+            "rating": 3,
+            "images": []
+        },
+        {
+            "name": "G5",
+            "value": "The water heating is provided by the boiler described in section G4 heating.\nThere is a Santon premier plus unvented hot water system cylinder within the first floor airing cupboard, which stores hot water for the property.\nAn annual service is recommended to ensure that the boiler provides you with the hot water that is required, all as stated in section G2 above.",
+            "rating": 1,
+            "images": []
+        },
+        {
+            "name": "H0",
+            "value": "Inspected from ground level only.",
+            "rating": "",
+            "images": []
+        },
+        {
+            "name": "I1",
+            "value": "F7 Joinery: Installation of staircase handrail and balustrading. G1 Electricity: Recent test and inspection certificate.\nG2 Gas: Recent test and service certificate. G4 Heating: Recent test and service certificate.",
+            "rating": "",
+            "images": []
+        },
+        {
+            "name": "J2",
+            "value": "There are none.",
+            "rating": "",
+            "images": []
+        },
+        {
+            "name": "K2",
+            "value": "",
+            "rating": "",
+            "images": []
+        }
+    ]
+}

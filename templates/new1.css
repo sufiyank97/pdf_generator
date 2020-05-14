@@ -7,20 +7,18 @@
         #page_1 {
             position: relative;
             overflow: hidden;
-            margin: 38px 0px 26px 0px;
+            /* margin: 38px 0px 26px 0px; */
+            margin: auto;
             padding: 0px;
             border: none;
-            width: 793px;
+            width: 770px;
             height: 1059px;
         }
 
         #page_1 #p1dimg1 {
             position: absolute;
-            top: 0px;
-            left: 38px;
-            z-index: -1;
-            width: 718px;
-            height: 1059px;
+            top: 4em;
+
         }
 
         #page_1 #p1dimg1 #p1img1 {
@@ -33,9 +31,9 @@
 
         #page_2 {
             position: relative;
-            overflow: hidden;
-            margin: 0px 0px 15px 50px;
-            padding: 0px;
+
+            margin: 4em;
+            padding-top: 1em;
             border: none;
             width: 717px;
         }
@@ -59,9 +57,9 @@
 
         #page_3 {
             position: relative;
-            overflow: hidden;
-            margin: 0px 0px 15px 50px;
-            padding: 0px;
+
+            margin: 4em;
+            padding-top: 11em;
             border: none;
             width: 717px;
         }
@@ -85,9 +83,9 @@
 
         #page_4 {
             position: relative;
-            overflow: hidden;
-            margin: 0px 0px 15px 50px;
-            padding: 0px;
+            
+            margin: 4em;
+            padding-top: 14em;
             border: none;
             width: 717px;
         }
@@ -111,9 +109,9 @@
 
         #page_5 {
             position: relative;
-            overflow: hidden;
-            margin: 0px 0px 15px 50px;
-            padding: 0px;
+            
+            margin: 4em;
+            padding-top: 16em;
             border: none;
             width: 717px;
         }
@@ -137,9 +135,9 @@
 
         #page_6 {
             position: relative;
-            overflow: hidden;
-            margin: 0px 0px 15px 50px;
-            padding: 0px;
+            
+            margin: 4em;
+            padding-top: 16em;
             border: none;
             width: 717px;
         }
@@ -163,9 +161,9 @@
 
         #page_7 {
             position: relative;
-            overflow: hidden;
-            margin: 0px 0px 15px 50px;
-            padding: 0px;
+            
+            margin: 4em;
+            padding-top: 27em;
             border: none;
             width: 717px;
         }
@@ -190,8 +188,8 @@
         #page_8 {
             position: relative;
             overflow: hidden;
-            margin: 0px 0px 15px 50px;
-            padding: 0px;
+            margin: 4em;
+            padding-top: 10em;
             border: none;
             width: 717px;
         }
@@ -216,8 +214,8 @@
         #page_9 {
             position: relative;
             overflow: hidden;
-            margin: 0px 0px 15px 50px;
-            padding: 0px;
+            margin: 4em;
+            padding-top: 7em;
             border: none;
             width: 642px;
         }
@@ -455,7 +453,7 @@
 
         .p10 {
             text-align: left;
-            margin-top: 53px;
+            margin-top: -3em;
             margin-bottom: 0px;
         }
 

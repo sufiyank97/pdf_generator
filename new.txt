@@ -1,0 +1,146 @@
+const main4 = async (a1) => {
+    const puppeteer = require('puppeteer')
+    const browser = await puppeteer.launch({
+        args: [
+            '--no-sandbox',
+            '--disable-setuid-sandbox',
+        ],
+    })
+    const page = await browser.newPage()
+    var rics = await base64_encode('rics.png')
+    var ricshomebuyer = await base64_encode('RicsHomeuyerReport.jpg')
+    let footeradr = `
+    <div id="footer-template" style="font-size:10px !important;padding-left:10px">
+        
+    <table style="margin-left: 1.6em;">
+    <tr>
+    <td>
+        <P style="text-align:left;padding-left:42px;color:#a0a4b0;">Property address</P>
+    </td>
+    <td>
+        <div style="
+                border: 1px solid #a0a4b0;
+                width: 34em;
+            margin-left: -5em;
+            ">
+            <p style="margin-top: -0em;"></p>
+        </div>
+    </td>
+    </tr>
+            <tr>
+                <td>
+                    <img src="data:image/jpeg;base64,${rics}" width="180em">
+                </td>
+                <td style="padding-left: 13em;">
+                    <img src="data:image/jpeg;base64,${ricshomebuyer}" width="230em">
+                </td>
+            </tr>
+        </table>
+    </div>
+    `
+    // const content1 = await compile('homebuildercover', a1)
+    // await page.setContent(content1)
+    // await page.emulateMediaType('screen')
+    // await page.pdf({
+    //     path: 'homebuildercover.pdf',
+    //     printBackground: true,
+    //     format: 'A4',
+    // })
+    const content2 = await compile('homebuilder', a1)
+    await page.setContent(content2)
+    await page.emulateMediaType('screen')
+    await page.pdf({
+        path: 'homebuilder.pdf',
+        printBackground: true,
+        format: 'A4',
+        displayHeaderFooter: true,
+        footerTemplate: footeradr,
+        margin: {
+            bottom: '117px',
+            right: '30px',
+            left: '25px'
+        }
+    })
+}
+
+app.post('/new4', async (req, res) => {
+    try {
+        await main4(req.body.values);
+    } catch (e) {
+        console.log('error', e)
+    }
+})
+
+
+
+
+app.post('/new3', async (req, res) => {
+    const puppeteer = require('puppeteer')
+    const browser = await puppeteer.launch()
+    const page = await browser.newPage()
+    // const filePath = path.join(process.cwd(), 'templates', `h1.html`)
+    // console.log(filePath)
+    // const html = await fs.readFileSync(filePath, { encoding: 'utf-8' })
+    // await page.setContent(html)
+    // await page.pdf({ path: 'nn.pdf', format: 'A4' })
+
+    // const html = await fs.readFileSync(filePath, { encoding: 'utf-8' })
+    // await page.setContent(html)
+    // const buffer1 = await page.pdf({
+    //     path: 'check.pdf',
+    //     format: 'A4'
+    // })
+    const hummus = require('hummus');
+    const filePath = path.join(process.cwd(), `homebuyer3-10.pdf`)
+    console.log(filePath)
+    var pdfInserPageNumber = hummus.createWriterToModify(filePath, {
+        modifiedFilePath: 'AppendPagesTestModif.pdf'
+    });
+    const filePath1 = path.join(process.cwd(), `Poppins-Regular.ttf`)
+    console.log(filePath1)
+    var getFont = pdfInserPageNumber.getFontForFile(filePath1);
+    var textOptions = { font: getFont, size: 35, colorspace: 'gray', color: 'red' };
+    var totalPages = hummus.createReader(filePath).getPagesCount();
+
+    var pageNumber;
+    for (pageNumber = 1; pageNumber <= totalPages; pageNumber++) {
+        var pageModifier = new hummus.PDFPageModifier(pdfInserPageNumber, pageNumber - 1, true);
+        pageModifier.startContext().getContext().writeText('Page ' + String(pageNumber) + ' of ' + String(totalPages), 75, 805, textOptions);
+        pageModifier.endContext().writePage();
+    }
+    pdfInserPageNumber.end();
+
+
+    // const hummus = require('hummus');
+    // const memoryStreams = require('memory-streams');
+    // const combinePDFBuffers = async (firstBuffer, secondBuffer) => {
+    //     var outStream = new memoryStreams.WritableStream();
+
+    //     try {
+    //         var firstPDFStream = new hummus.PDFRStreamForBuffer(firstBuffer);
+    //         var secondPDFStream = new hummus.PDFRStreamForBuffer(secondBuffer);
+    //         var pdfWriter = hummus.createWriterToModify(firstPDFStream, new hummus.PDFStreamForResponse(outStream));
+
+    //         pdfWriter.appendPDFPagesFromPDF(secondPDFStream);
+
+    //         pdfWriter.end();
+    //         var newBuffer = outStream.toBuffer();
+
+    //         outStream.end();
+
+    //         return newBuffer;
+
+    //     }
+    //     catch (e) {
+
+    //         outStream.end();
+
+    //         console.log('Error during PDF combination: ' + e.message);
+    //     }
+    // };
+    // const result = await combinePDFBuffers(buffer, buffer1);
+    // res.contentType("application/pdf");
+    // res.send(result)
+    // await browser.close()
+})
+
