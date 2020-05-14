@@ -273,7 +273,7 @@ const main = async (a1) => {
     await page.setContent(content1)
     await page.emulateMediaType('screen')
     const remainingPages = await page.pdf({
-        path: 'mypdf.pdf',
+        // path: 'mypdf.pdf',
         format: 'A4',
 
         printBackground: true,
