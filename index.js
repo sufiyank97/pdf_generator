@@ -6,18 +6,15 @@ const path = require('path')
 const hummus = require('hummus');
 const memoryStreams = require('memory-streams');
 const moment = require('moment')
-const pdf = require('express-pdf')
 const cors = require('cors')
-var FileSaver = require('file-saver');
+
 const app = express()
 const file1 = path.join(process.cwd(), 'templates')
-const Blob = require("cross-blob");
 
 const PDFRStreamForBuffer = require('./buffer.js');
 app.use(cors());
 app.use(express.json())
 app.use(express.static(file1))
-app.use(pdf)
 const port = process.env.PORT || 3004;
 
 
@@ -336,12 +333,10 @@ const main = async (a1) => {
 app.post('/new', async function (req, res) {
     try {
         const result = await main(req.body.values);
-        // res.setHeader('Content-disposition', 'attachment;filename=report.pdf')
+
         res.setHeader('Content-Type', 'application/pdf');
         res.send(result)
-        // var blob = new Blob(result, { type: "application/pdf" });
 
-        // FileSaver.saveAs(blob, "report.pdf");
     } catch (e) {
         console.log('error', e)
     }
